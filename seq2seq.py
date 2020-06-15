@@ -378,8 +378,8 @@ def evaluated(encoder, decoder, inputlang, outputlang, pairss2):
     i = 0
     for pair in pairss2:
     
-        criterion = criterion = nn.NLLLoss()
-        output_words2, attentions2, loss = evaluate(encoder, decoder, pair[0], pair[1], inputlang, outputlang)
+        criterion = nn.NLLLoss()
+        output_words2, attentions2, loss = evaluate(encoder, decoder, pair[0], pair[1], inputlang, outputlang, nn.NLLLoss())
         output_sentence2 = ' '.join(output_words2)
         eval_loss +=loss
         i+=1
