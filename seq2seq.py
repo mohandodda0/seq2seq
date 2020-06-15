@@ -333,7 +333,6 @@ def trainIters(encoder, decoder, n_iters, print_every=1000, plot_every=100, lear
                 }, 'decoder.pt')
           
 
-    showPlot(plot_losses)
 
 def evaluate(encoder, decoder, question, answer, inputlang, outputlang, criterion, max_length=MAX_LENGTH):
     with torch.no_grad():
