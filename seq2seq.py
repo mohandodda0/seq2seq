@@ -419,3 +419,5 @@ with open ('data/q2-a2.txt', 'w') as writer:
 
 pairs2 = readLangs2('q2', 'a2', False)
 print('evaluation: ', evaluated(encoder1, attn_decoder1, input_lang, output_lang, pairs2))
+with open ('ans.txt', 'w') as writer:
+    writer.write(evaluated(encoder1, attn_decoder1, input_lang, output_lang, pairs2))
